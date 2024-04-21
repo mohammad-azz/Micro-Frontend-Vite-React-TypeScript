@@ -1,29 +1,30 @@
-# React + TypeScript + Vite Microfrontend Project
-This project is a demonstration of a microfrontend architecture, allowing users to understand how multiple frontend applications can be integrated into a single coherent application.
+# React + TypeScript + Vite federation (Microfrontend)
+This project is a demonstration of a micro frontend architecture, allowing users to understand how multiple frontend applications can be integrated into a single coherent application.
 
 # Overview
 Microfrontend architecture involves breaking down a web application into smaller, more manageable pieces, each developed and deployed independently. These individual pieces, or microfrontends, can then be composed together to form a cohesive user experience.
 
+# Current Status
+This project is actively being developed to complete all planned features. While some parts are already implemented, work is ongoing to finalize the remaining components.
+
 # Technologies Used
 Vite: Used as the build tool for this project.
-React: Utilized to develop the remote microfrontend project.
+React: Utilized to develop the remote micro frontend project.
 HTML, CSS, JavaScript: Fundamental technologies for building web applications.
+
 # Installation
-Clone this repository to your local machine.
-Navigate to the directory where you cloned the repository.
-Install dependencies by running:
-Copy code
+1. Clone this repository to your local machine.
+2. Navigate to the directory where you cloned the repository.
+3. Install dependencies by running:
+```js
 npm install
-# Usage
-Start the host application:
-arduino
-Copy code
-npm run dev:host
-Start the remote application:
-arduino
-Copy code
-npm run dev:remote
-Open your browser and navigate to http://localhost:3000 to view the application.
+```
+4. Run npm run build and npm run serve. This will build and serve both host and remote on ports 5000, 5001 respectively.
+
+HOST: localhost:5000 
+
+REMOTE: localhost:5001 (Product Cards)
+
 # Contributing
 This project is developed for personal learning purposes and is currently not open to external contributions.
 
