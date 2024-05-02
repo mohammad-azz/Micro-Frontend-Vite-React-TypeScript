@@ -9,13 +9,15 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "tsc && vite build && vite preview --port=5000 --strictPort",
     "serve": "vite preview --port 5000 --strictPort"
-
   },
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.5.1",
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@headlessui/react": "^1.7.19",
+    "@types/react-currency-format": "^1.0.4",
     "autoprefixer": "^10.4.18",
+    "html-react-parser": "^5.1.10",
     "postcss": "^8.4.35",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

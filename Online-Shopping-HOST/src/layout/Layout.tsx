@@ -1,16 +1,22 @@
 import Header from "./Header"
 import { CarouselSilder } from '../Components/Carousel/Carousel'
-import {Products} from 'remoteApp/Products';
+import { Products } from 'remoteApp/Products';
+
 const Layout = () => {
 
+
     return (
-        <div className="w-full">
-            <div className="h-screen flex flex-col">
+
+        <div className=" flex flex-col w-screen  bg-white">
+            <div className="h-lvh">
+
                 <Header />
                 <CarouselSilder />
-               <Products ItemCount={10} RowCount={2} />
             </div>
+            <Products ItemCount={7} RowCount={'grid-cols-4'} />
+
         </div>
+
     )
 }
 export default Layout;

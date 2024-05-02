@@ -10,6 +10,7 @@ export default defineConfig({
       name: 'app',
       remotes: {
         remoteApp: "http://localhost:5001/assets/remoteEntry.js",
+         AuthRemote: "http://localhost:5002/assets/remoteEntry.js",
       },
       shared: ['react','react-dom']
     })

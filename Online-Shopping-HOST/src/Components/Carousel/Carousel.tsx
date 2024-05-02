@@ -42,13 +42,13 @@ export const CarouselSilder = () => {
                     </div>
                     <div className='font-bold flex flex-col items-center gap-2 pl-8  z-10'>
                         <span className='text-3xl text-gray-600'>EXTRA</span>
-                        <span className='text-6xl'>20%OFF</span>
+                        <span className='text-6xl   text-gray-900'>20%OFF</span>
                         <div className='text-3xl bor flex flex-row flex-nowrap w-full  items-center'>
                             <hr className='border-t-4 border-gray-950 w-1/4' />
-                            <span className='w-2/4 m-1 text-center'>BIKES</span>
+                            <span className='w-2/4 m-1 text-center  text-gray-900'>BIKES</span>
                             <hr className='border-t-4 border-gray-950 w-1/4' />
                         </div>
-                        <span className='text-3xl font-mono  italic'>Winter Sale</span>
+                        <span className='text-3xl font-mono  italic text-gray-600'>Winter Sale</span>
                         <div className='pt-5'>
                             <button className='text-1xl bg-slate-900 text-slate-100 p-3 hover:text-teal-500'>SHOP ALL SALE</button>
                         </div>
@@ -62,13 +62,13 @@ export const CarouselSilder = () => {
 
 
                         <span className='text-3xl text-gray-600'>EXTRA</span>
-                        <span className='text-6xl'>20%OFF</span>
+                        <span className='text-6xl text-gray-900'>20%OFF</span>
                         <div className='text-3xl bor flex flex-row flex-nowrap w-full  items-center'>
                             <hr className='border-t-4 border-gray-950 w-1/4' />
-                            <span className='w-2/4 m-1 text-center'>BIKES</span>
+                            <span className='w-2/4 m-1 text-center text-gray-900'>BIKES</span>
                             <hr className='border-t-4 border-gray-950 w-1/4' />
                         </div>
-                        <span className='text-3xl font-mono  italic'>Winter Sale</span>
+                        <span className='text-3xl font-mono  italic text-gray-600'>Winter Sale</span>
                         <div className='pt-5'>
                             <button className='text-1xl bg-slate-900 text-slate-100 p-3 hover:text-teal-500'>SHOP ALL SALE</button>
                         </div>
