@@ -32,4 +32,8 @@ This project is developed for personal learning purposes and is currently not op
 This project is free and open-source, released under the MIT License.
 
 # Support
+<<<<<<< HEAD
 If you encounter any issues or have questions about this project, feel free to reach out to the project owner.
+=======
+If you encounter any issues or have questions about this project, feel free to reach out to the project owner.
+>>>>>>> f86e1a88bbb9af1ebaef38eda9998aa4e61141a6
