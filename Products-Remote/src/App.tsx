@@ -1,9 +1,10 @@
 
-import {Products} from './ProductsList'
-function Test() {
+import { Products } from './ProductsList'
+function Test(prop) {
+  console.log(prop);
   return (
     <>
-      <Products  />
+      <Products />
     </>
   )
 }

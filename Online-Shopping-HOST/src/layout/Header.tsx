@@ -4,8 +4,7 @@ import { faTruckFast, faMoneyBillTransfer, faPhoneVolume, faUserAlt, faShoppingB
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useEffect, useState } from "react";
 import { Modal } from "../Components/Modal/modal";
-
-// import CurrencyFormat from 'react-currency-format';
+import { Login } from 'AuthRemote/Login';
 
 type MenuItems = {
     title: string,
@@ -17,22 +16,23 @@ const Header = () => {
     { 'title': 'MOUNTAIN BIKES', 'url': 'MOUNTAINBIKES' }, { 'title': 'GRAVEL BIKES', 'url': 'GRAVELBIKES' }]
 
     const [showLogin, setshowLogin] = useState(false);
+    const [htmlContent, setHtmlContent] = useState<HTMLElement | null>(null);
 
     const userClick = () => {
-        if (!localStorage.getItem('useName'))
             setshowLogin(true)
     }
-    const [htmlContent, setHtmlContent] = useState('');
-
     useEffect(() => {
-        fetch('http://localhost:5002/src/Login?t=${Date.now()}')
-          .then(response => response.text())
-          .then(html => setHtmlContent(html))
-          .catch(error => console.error('Error fetching remote HTML:', error));
-      }, []);
+        if (showLogin) {
+            if (!localStorage.getItem('userName')){
+            const responseForm: HTMLElement = Login('LoginForm');
+            setHtmlContent(responseForm);
+            }
+        }
+    }, [showLogin]);
     return (
         <div className="w-full">
-            {showLogin && <Modal visible={showLogin} invisible={setshowLogin} title="Log in with email address and password" content={htmlContent} />}
+   
+            {showLogin && <Modal visible={showLogin} invisible={setshowLogin} title="I am already a customer" content={htmlContent} />}
             <div className="w-full  flex flex-row gap-5 justify-end pt-4 -mb-9 pr-12 text-sm text-gray-700">
                 <FontAwesomeIcon icon={faUserAlt} size="2x" onClick={() => userClick()} className="cursor-pointer" />
                 <div>

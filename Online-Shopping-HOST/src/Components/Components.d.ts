@@ -8,6 +8,6 @@ type Dialog_Type = {
 type Modal_Type = {
     visible:boolean,
     title:string,
-    content:string,
+    content:HTMLElement| null,
     invisible:React.Dispatch<React.SetStateAction<boolean>>
 }
