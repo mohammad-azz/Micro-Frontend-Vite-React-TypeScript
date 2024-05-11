@@ -23,7 +23,8 @@ npm install
 
 HOST: localhost:5000 
 
-REMOTE: localhost:5001 (Product Cards)
+REMOTE: localhost:5001 (Product)
+REMOTE: localhost:5002 (Auth)
 
 # Contributing
 This project is developed for personal learning purposes and is currently not open to external contributions.
