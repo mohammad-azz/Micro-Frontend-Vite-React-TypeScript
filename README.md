@@ -8,9 +8,9 @@ Microfrontend architecture involves breaking down a web application into smaller
 This project is actively being developed to complete all planned features. While some parts are already implemented, work is ongoing to finalize the remaining components.
 
 # Technologies Used
-Vite: Used as the build tool for this project.
-React: Utilized to develop the remote micro frontend project.
-HTML, CSS, JavaScript: Fundamental technologies for building web applications.
+Core Project (Host): Vite + React + Vite module federation + Typescript + Tailwind CSS
+Auth Project (Remote): Vite + Typescript + Vite module federation + Tailwind 
+Product Project (Remote): Vite + React + Vite module federation + Typescript + Tailwind CSS
 
 # Installation
 1. Clone this repository to your local machine.
