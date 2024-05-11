@@ -1,4 +1,4 @@
-type ProductsList = {
+type Product = {
     id: number,
     BrandName: string,
     Name: string,

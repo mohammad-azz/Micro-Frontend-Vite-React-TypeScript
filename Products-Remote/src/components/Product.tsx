@@ -1,10 +1,10 @@
 
-export const Product = (product: ProductsList) => {
+export const Product = (product: Product & {onClickfn:React.MouseEventHandler<HTMLDivElement> }) => {
 
     return (
-        <>
+        
             <div className="flex flex-col h-full">
-                <div className="self-center w-4/5 ">
+                <div className="self-center w-4/5 " id={product.id.toString()} onClick={product.onClickfn}>
                     <img src={import.meta.env.VITE_BASE_URL + '/images/Bikes/'+product.image} />
                 </div>
                 <div className="flex flex-col pl-2 pr-2 pt-1 h-full">
@@ -18,6 +18,6 @@ export const Product = (product: ProductsList) => {
                     <div className="self-center  h-full content-end"> <button className="uppercase bg-cyan-400 pl-3 pr-3 pt-1 pb-1">ADD TO CART</button></div>
                 </div>
             </div>
-        </>
+        
     )
 }

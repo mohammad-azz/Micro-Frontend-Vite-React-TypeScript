@@ -54,15 +54,38 @@ const LoginForm = () => {
     container.appendChild(passwordInput);
 
     const signInButton = document.createElement('button');
-
-
     signInButton.className = "inline-flex items-center justify-center h-10 gap-2 px-5 text-sm font-medium tracking-wide text-white transition duration-300 rounded focus-visible:outline-none whitespace-nowrap bg-cyan-500 hover:bg-cyan-600 focus:bg-cyan-700 disabled:cursor-not-allowed disabled:border-cyan-300 disabled:bg-cyan-300 disabled:shadow-none";
     signInButton.innerHTML = 'Sign in';
+    signInButton.id = "sign_in";
+
+    const registerButton = document.createElement('button');
+    registerButton.className = "inline-flex items-center justify-center h-10 gap-2 px-5 text-sm font-medium tracking-wide text-white transition duration-300 rounded focus-visible:outline-none whitespace-nowrap bg-green-500 hover:bg-green-600 focus:bg-green-700 disabled:cursor-not-allowed disabled:border-green-300 disabled:bg-green-300 disabled:shadow-none";
+    registerButton.innerHTML = 'Create an Account';
+    registerButton.id = "create_account";
+
     const buttonContainer = document.createElement('div')
-    buttonContainer.className = "justify-end flex w-full pt-4";
+    buttonContainer.className = "justify-end flex w-full pt-4 gap-2";
+    buttonContainer.appendChild(registerButton);
     buttonContainer.appendChild(signInButton);
     container.appendChild(buttonContainer);
 
+    const resgisterNote = document.createElement('div');
+    resgisterNote.className='pt-6 pl-5'
+    const ulNote = document.createElement('ul');
+     ulNote.className = 'list-disc'
+    const li1 = document.createElement('li');
+    li1.innerText = 'Quick shopping';
+    const li2 = document.createElement('li');
+    li2.innerHTML = 'Order overview and shipping information';
+    const li3 = document.createElement('li');
+     li3.innerHTML = 'Manage your newsletter subscription';
+    ulNote.appendChild(li1);
+    ulNote.appendChild(li2);
+    ulNote.appendChild(li3);
+
+    resgisterNote.innerHTML = 'Advantages of registering : ';
+    resgisterNote.appendChild(ulNote);
+    container.appendChild(resgisterNote);
 
     form.appendChild(container);
     return form;
